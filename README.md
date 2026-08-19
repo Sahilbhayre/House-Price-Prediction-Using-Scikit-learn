@@ -151,6 +151,17 @@ house-price-scikit-learn/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
+## 🚀 Future Improvements
 
+- Compare Linear Regression with other regression algorithms
+- Perform hyperparameter tuning
+- Improve model performance
+- Add a user-friendly Streamlit interface
+- Deploy the model for real-time predictions
 
-Your **R² = 0.6543**, so write **R² Score: 0.6543**. That's technically correct and looks m
+## 👨‍💻 Author
+
+**Sahil Bhayre**
+
+B.Tech CSE (AIML) Student
