@@ -67,56 +67,66 @@ Model Evaluation
         ↓
 User Input Prediction
 ```
+
 ## ⚙️ Preprocessing
-**Numerical Features**
+
+### Numerical Features
+
 - Missing values → Median Imputation
 - Feature scaling → StandardScaler
-  
-**Categorical Features**
+
+### Categorical Features
+
 - Missing values → Most Frequent Imputation
 - Encoding → OneHotEncoder
 
-All preprocessing and model training are combined using a Scikit-learn Pipeline.
+All preprocessing steps are combined using a **Scikit-learn ColumnTransformer and Pipeline**.
 
 ## 🤖 Model
 
-**Linear Regression**
+### Linear Regression
 
-The model is trained using Scikit-learn's LinearRegression.
+The model is implemented using Scikit-learn's `LinearRegression`.
 
-📈 Model Performance
-Metric	Score
-MAE	962,528.89
-RMSE	1,321,857.16
-R² Score	0.6543
-Mean CV R²	0.6383
+The preprocessing steps and model are combined into a single Pipeline to ensure consistent preprocessing during training and prediction.
 
-The model achieved an R² score of 0.6543 on the test set.
+## 📈 Model Performance
 
-R² is used as the evaluation metric here; it should not be interpreted as model accuracy.
+| Metric | Score |
+|---|---:|
+| MAE | 962,528.89 |
+| RMSE | 1,321,857.16 |
+| R² Score | 0.6543 |
+| Mean CV R² | 0.6383 |
 
-🔮 User Input Prediction
+The model achieved an **R² score of 0.6543** on the test set.
+
+> R² is used as the evaluation metric here and should not be interpreted as model accuracy.
+
+## 🔮 User Input Prediction
 
 The trained pipeline can predict house prices based on user-provided property details.
 
-Example inputs include:
+The user can provide:
 
-Area
-Bedrooms
-Bathrooms
-Stories
-Parking
-Mainroad
-Guestroom
-Basement
-Hot Water Heating
-Air Conditioning
-Preferred Area
-Furnishing Status
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Parking
+- Mainroad
+- Guestroom
+- Basement
+- Hot Water Heating
+- Air Conditioning
+- Preferred Area
+- Furnishing Status
 
-The complete preprocessing pipeline is automatically applied to new user input before generating the prediction.
+The same preprocessing pipeline is automatically applied to the user input before generating the prediction.
 
-📁 Project Structure
+## 📁 Project Structure
+
+```text
 house-price-scikit-learn/
 │
 ├── data/
@@ -141,27 +151,6 @@ house-price-scikit-learn/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-🚀 Future Improvements
-Compare multiple regression algorithms
-Hyperparameter tuning
-Improve model performance
-Deploy the model using Streamlit
-👨‍💻 Author
-
-Sahil Bhayre
-
-
-
-### One correction I intentionally made
-
-
-Don't write:
-
-
-> **Accuracy: 65.43%**
-
-
-for this project.
 
 
 Your **R² = 0.6543**, so write **R² Score: 0.6543**. That's technically correct and looks m
