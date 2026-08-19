@@ -69,8 +69,8 @@ User Input Prediction
 ```
 ## ⚙️ Preprocessing
 Numerical Features
-Missing values → Median Imputation
-Feature scaling → StandardScaler
+- Missing values → Median Imputation
+- Feature scaling → StandardScaler
 Categorical Features
 Missing values → Most Frequent Imputation
 Encoding → OneHotEncoder
