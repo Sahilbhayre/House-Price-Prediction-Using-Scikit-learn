@@ -66,7 +66,7 @@ Cross-Validation
 Model Evaluation
         ↓
 User Input Prediction
-
+```
 ## ⚙️ Preprocessing
 Numerical Features
 Missing values → Median Imputation
