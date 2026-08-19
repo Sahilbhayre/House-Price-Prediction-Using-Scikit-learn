@@ -68,18 +68,19 @@ Model Evaluation
 User Input Prediction
 ```
 ## ⚙️ Preprocessing
-Numerical Features
+**Numerical Features**
 - Missing values → Median Imputation
 - Feature scaling → StandardScaler
-Categorical Features
-Missing values → Most Frequent Imputation
-Encoding → OneHotEncoder
+  
+**Categorical Features**
+- Missing values → Most Frequent Imputation
+- Encoding → OneHotEncoder
 
 All preprocessing and model training are combined using a Scikit-learn Pipeline.
 
-🤖 Model
+## 🤖 Model
 
-Linear Regression
+**Linear Regression**
 
 The model is trained using Scikit-learn's LinearRegression.
 
